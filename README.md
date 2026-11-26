@@ -72,3 +72,12 @@ npm install --legacy-peer-deps
 npm test
 npm run build
 ```
+
+## Publicação
+
+Versões saem pelo GitHub Actions com trusted publishing (OIDC): não há token do npm guardado, e o pacote sai com provenance. Para lançar:
+
+1. Por PR, suba a versão no `package.json` (`npm version patch --no-git-tag-version`).
+2. Depois do merge, crie e envie a tag igual à versão: `git tag v0.1.1 && git push origin v0.1.1`.
+
+O workflow `release.yml` confere que a tag bate com o `package.json`, roda typecheck, testes e build e publica.

@@ -7,7 +7,7 @@ import { registerTools } from './tools.js';
 
 async function main(): Promise<void> {
   const config = loadConfig(process.env);
-  const server = new McpServer({ name: 'xcbrasil', version: '0.1.0' });
+  const server = new McpServer({ name: 'xcbrasil', version: '0.1.1' });
   registerTools(server, createClient(config));
   await server.connect(new StdioServerTransport());
 }

@@ -27,7 +27,7 @@ describe('createClient', () => {
     [500, { error: 'boom' }, {}, /boom/],
   ])('erro %i vira mensagem para o piloto', async (status, body, headers, message) => {
     const client = createClient({ baseUrl: 'https://api.test', token: 'tok', fetch: fakeFetch(status, body, headers) });
-    const error = await client.get('/x').catch((e) => e);
+    const error = (await client.get('/x').catch((e: unknown) => e)) as XcbrasilApiError;
     expect(error).toBeInstanceOf(XcbrasilApiError);
     expect(error.status).toBe(status);
     expect(error.message).toMatch(message);

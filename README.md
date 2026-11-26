@@ -81,3 +81,7 @@ Versões saem pelo GitHub Actions com trusted publishing (OIDC): não há token 
 2. Depois do merge, crie e envie a tag igual à versão: `git tag v0.1.1 && git push origin v0.1.1`.
 
 O workflow `release.yml` confere que a tag bate com o `package.json`, roda typecheck, testes e build e publica.
+
+## Licença
+
+MIT. Copyright (c) 2026 Confederação Brasileira de Voo Livre (CBVL). Veja `LICENSE`.

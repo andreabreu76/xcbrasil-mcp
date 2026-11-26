@@ -2,6 +2,7 @@
   "name": "xcbrasil-mcp",
   "version": "0.1.0",
   "description": "Servidor MCP para o piloto consultar os próprios voos do XCBrasil num assistente de IA",
+  "author": "Confederação Brasileira de Voo Livre (CBVL)",
   "type": "module",
   "bin": {
     "xcbrasil-mcp": "dist/index.js"

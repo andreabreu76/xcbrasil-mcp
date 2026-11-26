@@ -27,5 +27,16 @@
     "@types/node": "^22.10.0",
     "typescript": "^5.7.0",
     "vitest": "^4.1.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreabreu76/xcbrasil-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "xcbrasil",
+    "paragliding",
+    "parapente",
+    "voo-livre"
+  ]
 }

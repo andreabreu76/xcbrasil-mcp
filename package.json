@@ -29,7 +29,8 @@
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^5.7.0",
-    "vitest": "^4.1.8"
+    "vite": "^8.4.0",
+    "vitest": "^5.1.1"
   },
   "repository": {
     "type": "git",
